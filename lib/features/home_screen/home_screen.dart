@@ -36,17 +36,17 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('explore'.tr(), style: AppTextStyles.titleStyle),
         actions: [
           SearchTextFieldWidget(),
-          // IconButton(
-          //   onPressed: () {
-          //     if (context.locale.languageCode == 'en') {
-          //       context.setLocale(Locale('ar'));
-          //     } else {
-          //       context.setLocale(Locale('ar'));
-          //     }
-          //     AppConstants.lang == context.locale.languageCode;
-          //   },
-          //   icon: Icon(Icons.language, color: Colors.black),
-          // ),
+          IconButton(
+            onPressed: () {
+              if (context.locale.languageCode == 'en') {
+                context.setLocale(Locale('ar'));
+              } else {
+                context.setLocale(Locale('en'));
+              }
+              AppConstants.lang == context.locale.languageCode;
+            },
+            icon: Icon(Icons.language, color: Colors.black),
+          ),
         ],
       ),
       body: FutureBuilder(

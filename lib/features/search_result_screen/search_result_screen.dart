@@ -26,7 +26,7 @@ class SearchResultScreen extends StatelessWidget {
               if (context.locale.languageCode == 'en') {
                 context.setLocale(Locale('ar'));
               } else {
-                context.setLocale(Locale('ar'));
+                context.setLocale(Locale('en'));
               }
               AppConstants.lang == context.locale.languageCode;
             },
